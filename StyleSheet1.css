@@ -1,0 +1,29 @@
+﻿
+.lblLarge {
+    margin-top: 20px;
+    display: block;
+    font-size: x-large;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: block;
+    margin-left: 45px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.lblMed {
+    display: block;
+    font-size: medium;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.valError {
+    margin-left: 15px;
+    color: red;
+    font-weight: bold;
+}
