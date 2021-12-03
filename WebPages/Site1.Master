@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment_4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Menu ID="Menu1" runat="server">
+                <Items>
+                    <asp:MenuItem Text="Sign Up" Value="Sign Up" NavigateUrl="~/WebPages/SignUp.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Log In" Value="Log In" NavigateUrl="~/WebPages/LogIn.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="My Account" Value="My Account" NavigateUrl="~/WebPages/MyAccount.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/banner(1).jpg" Width="786px" />
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:c432019fa02martinezd2ConnectionString %>"></asp:SqlDataSource>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
